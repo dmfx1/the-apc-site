@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-chakra-petch);
+  --color-apc-orange: rgba(255, 190, 105, 1); 
+  --color-apc-orange-85: rgba(255, 190, 105, 0.85);     /* hot orange, semi-transparent */
+  --color-apc-turquoise: rgba(42, 210, 200, 1);
+  --color-apc-turquoise-85: rgba(42, 210, 200, 0.85);  /* original but softened with alpha */
+  --color-apc-purple: rgba(210, 150, 250, 1);
+  --color-apc-purple-85: rgba(210, 150, 250, 0.85);     /* vivid purple with slight glow */
+  --color-apc-bg: #E4E8E6;
+  --color-apc-bg-dark: rgba(58, 58, 58, 0.66);
+  --color-apc-black: #3a3a3a;
+  --color-apc-cream: #f7f2e7;
+
+  --color-apc-pink:#FF6EC7;
+  --color-apc-blue:#00BFFF;
+  --color-apc-green:#A6E22E;
+  --color-apc-coral:#FF8674;
+  --color-apc-lavender:#D2B5F9;
+  --color-apc-beige:#FFDAB3;
+  --color-apc-teal:#5C7F85;
+  --color-apc-grey:#2C2C2C;
+}
+
+
+body {
+  background-image: url('/textures/theAPC_background_flipped_2.png');
+  background-repeat: repeat-y;
+  background-size: 100%;               /* or contain, depending on effect */
+  background-position: top left;
+  background-attachment: scroll;        /* allows full scrolling */
+  background-blend-mode: multiply;
+  min-height: 2750px;
+  max-height: 4000px;                  /* adjust based on your image height */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url('/textures/noise.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/textures/noise.webp');
+  background-size: 10%;
+  opacity: 0.06;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+details:nth-child(3n+1) {
+  background-color: var(--color-apc-orange-85);
+}
+
+details:nth-child(3n+2) {
+  background-color: var(--color-apc-turquoise-85);
+}
+
+details:nth-child(3n+3) {
+  background-color: var(--color-apc-purple-85);
+}
+
+.bevel{
+  padding: 10px;
+  clip-path: polygon(
+    8px 0%, calc(100% - 8px) 0%, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%,
+    0% calc(100% - 8px), 0% 8px
+  );  
+}
+
+.btn-bevel {
+  padding: 10px;
+  clip-path: polygon(
+    8px 0%, calc(100% - 8px) 0%, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%,
+    0% calc(100% - 8px), 0% 8px
+  );
+}
+
+.btn-bevel:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-bevel-dark {
+  padding: 10px;
+  clip-path: polygon(
+    8px 0%, calc(100% - 8px) 0%, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%,
+    0% calc(100% - 8px), 0% 8px
+  );
+}

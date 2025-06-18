@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+
+---
+
+<BaseLayout>
+  <main class="z-2 min-h-screen flex flex-col items-center justify-center px-6 py-16 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-10">
+      <span class="text-apc-orange">Audio</span>
+      <span class="text-apc-turquoise"> Post</span>
+      <span class="text-apc-purple"> Collective</span>
+    </h1>
+    <div class="sm:max-w-2/3 xl:max-w-1/2">
+      <p class="text-lg md:text-xl text-apc-black mb-6">
+        A scalable, high-end network of freelance audio post professionals – built for projects that demand creative precision, without the overhead of a full studio.
+      </p>
+
+      <p class="text-apc-black mb-10">
+        Led by <span class="text-apc-black font-bold"><a href="https://www.domstorrs.com" target="_blank">dom storrs</a></span>, The APC assembles bespoke remote teams to handle sound design, mixing, music editing, and VO for long-form and high-impact productions.
+      </p>
+    </div>
+
+    <a
+      href="mailto:dom@domstorrs.com"
+      class="btn-bevel bg-apc-black text-apc-cream text-sm md:text-base hover:bg-apc-bg-dark"
+    >
+      Get in touch
+    </a>
+  </main>
+
+  
+ <section class="px-6 md:px-16 max-w-8xl mx-auto text-apc-black">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+    <!-- FAQ Item 1 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        Who's behind The APC?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        A vetted team of freelance sound designers, mixers, composers, and editors. Built around a core network. Led by dom storrs.
+      </div>
+    </details>
+
+    <!-- FAQ Item 2 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        Who are you for?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        We're indie, for indie. For now our focus is on helping indie filmmakers and smaller studios hire a dynamic, flexible workforce to suit their production. Scaling when needed.
+      </div>
+    </details>
+
+    <!-- FAQ Item 3 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        How do you scale for bigger projects?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        We assemble a bespoke team depending on scope. Other editors and disciplines are introduced depending on timeframes, budget and workload.
+      </div>
+    </details>
+
+    <!-- FAQ Item 4 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        How do you manage enquiries and deadlines?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        You have one point of contact: dom. He manages the team, scheduling, and ensures quality control. It will feel like you're working under the one roof.
+      </div>
+    </details>
+
+    <!-- FAQ Item 5 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        How do you control quality?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        Creatives are encouraged to work by their preferred methods to get the best results for the project. That's the most important thing.
+        <br><br>
+        When it to comes to the mix we have structured protocols and well formatted templates in place to ensure consistency, quality control and adhere to industry standards should the project have to move outside of our system
+      </div>
+    </details>
+
+    <!-- FAQ Item 6 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        What type of projects do you support?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        Our support is broad, but we specialise in long-form projects like documentaries, series and features. Our work ranges from individual filmmakers to larger production companies delivering bespoke audio up to 7.1 surround sound.
+      </div>
+    </details>
+
+    <!-- FAQ Item 7 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        What disciplines do you cover?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        We can cover all your audio post-production needs for your project. That's the beauty of it – you let us know what you need and we will find a package to suit.
+        <br><br>
+        Services include: dialogue editing, ADR, voice-over [recording & production], ambience design, foley, sound design, sound editing, music editing, music supervision, music composition and final mixes [streaming / broadcast / film up to 7.1 surround]
+      </div>
+    </details>
+
+    <!-- FAQ Item 8 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        Where are you based?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        The power in this is that we are remote. That's what keeps costs down. Our core team is based across Manchester [UK] and we have access to a range of professional studios and spaces when we need them and when we need to collaborate in person.
+      </div>
+    </details>
+
+    <!-- FAQ Item 9 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        How do we start?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        Simply drop us a line at projects@theaudiopostcollective.uk or call dom on +44 [0] 7719 521 773 and we'll arrange a meet [in-person or virtual] to discuss your project requirements and see how we can help.
+      </div>
+    </details>
+
+    <!-- FAQ Item 10 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        Show me some credentials!
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        Check out our core roster <a href="#" target="_blank" class="font-bold">here</a> and check out our showreel <a href="#" target="_blank" class="font-bold">here</a>.
+      </div>
+    </details>
+
+    <!-- FAQ Item 11 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        Why operate like this?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        We believe in the power of collaboration, our network and lifting people up. We celebrate our community's talents and want to share them with the world by bringing our skillsets together, to compete on the big stage. 
+        <br><br>
+        We have a core team and an extended network on standby ready to be assembled when needed. This allows us to be flexible, scalable and cost-effective without compromising on quality.
+      </div>
+    </details>
+
+    <!-- FAQ Item 12 -->
+    <details class="group bevel">
+      <summary class="cursor-pointer py-4 px-6 font-semibold text-lg">
+        How can I get involved?
+      </summary>
+      <div class="px-6 pb-4 pt-2 text-sm">
+        Our network is carefully crafted to ensure quality over quantity. We want enough members to ensure we can deliver at the highest level but also to make sure opportunities are available to the existing members of our collective without having too much toe treading.
+        <br><br>
+        That said we are an equal opportunities network and welcome diversity and talent no matter where you are in the world. We also believe in the power of bringing the next generation through and can offer mentorship and work opportunities to those who are looking to get into the industry.
+        <br><br>
+        If you're interested in getting involved with The APC, please get in touch at enquiries@theaudiopostcollective.uk
+      </div>
+    </details>
+  </div>
+</section>
+
+
+</BaseLayout>
