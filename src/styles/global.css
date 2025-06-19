@@ -5,9 +5,9 @@
   --color-apc-orange: rgba(255, 190, 105, 1); 
   --color-apc-orange-85: rgba(255, 190, 105, 0.85);     /* hot orange, semi-transparent */
   --color-apc-turquoise: rgba(42, 210, 200, 1);
-  --color-apc-turquoise-85: rgba(42, 210, 200, 0.85);  /* original but softened with alpha */
+  --color-apc-turquoise-66: rgba(42, 210, 200, 0.66);  /* original but softened with alpha */
   --color-apc-purple: rgba(210, 150, 250, 1);
-  --color-apc-purple-85: rgba(210, 150, 250, 0.85);     /* vivid purple with slight glow */
+  --color-apc-purple-66: rgba(210, 150, 250, 0.66);     /* vivid purple with slight glow */
   --color-apc-bg: #E4E8E6;
   --color-apc-bg-dark: rgba(58, 58, 58, 0.66);
   --color-apc-black: #3a3a3a;
@@ -34,8 +34,9 @@ body {
   background-position: top left;
   background-attachment: scroll;        /* allows full scrolling */
   background-blend-mode: multiply;
-  min-height: 2750px;
-  max-height: 4000px;                  /* adjust based on your image height */
+  box-sizing: border-box;
+  min-height: fit-content;
+  padding-bottom: 25rem;                  /* adjust based on your image height */
 }
 
 body::before {
@@ -66,7 +67,7 @@ body::after {
 details:nth-child(3n+1) {
   background-image: linear-gradient(
     to bottom right,
-    var(--color-apc-orange),
+    var(--color-apc-orange-85),
     var(--color-apc-yellow)
   );
 }
@@ -74,7 +75,7 @@ details:nth-child(3n+1) {
 details:nth-child(3n+2) {
   background-image: linear-gradient(
     to bottom right,
-    var(--color-apc-turquoise),
+    var(--color-apc-turquoise-66),
     var(--color-apc-teal)
   );
 }
@@ -82,7 +83,7 @@ details:nth-child(3n+2) {
 details:nth-child(3n+3) {
   background-image: linear-gradient(
     to bottom right,
-    var(--color-apc-purple),
+    var(--color-apc-purple-66),
     var(--color-apc-pink)
   );
 }
