@@ -35,8 +35,7 @@ body {
   background-attachment: scroll;        /* allows full scrolling */
   background-blend-mode: multiply;
   box-sizing: border-box;
-  min-height: fit-content;
-  padding-bottom: 25rem;                  /* adjust based on your image height */
+  min-height: fit-content;                /* adjust based on your image height */
 }
 
 body::before {
