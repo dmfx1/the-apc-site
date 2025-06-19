@@ -13,7 +13,7 @@
   --color-apc-black: #3a3a3a;
   --color-apc-cream: #f7f2e7;
 
-  --color-apc-pink:#FF6EC7;
+  --color-apc-pink:rgba(255, 173, 248, 1);
   --color-apc-blue:#00BFFF;
   --color-apc-green:#A6E22E;
   --color-apc-coral:#FF8674;
@@ -21,7 +21,11 @@
   --color-apc-beige:#FFDAB3;
   --color-apc-teal:#5C7F85;
   --color-apc-grey:#2C2C2C;
+
+  --text-shadow-pink: 2px 2px 4px rgba(255, 173, 248, 1); /* apc-orange-ish */
 }
+
+
 
 
 body {
@@ -73,7 +77,6 @@ details:nth-child(3n+3) {
 }
 
 .bevel{
-  padding: 10px;
   clip-path: polygon(
     8px 0%, calc(100% - 8px) 0%, 100% 8px,
     100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%,
