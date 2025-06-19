@@ -13,16 +13,15 @@
   --color-apc-black: #3a3a3a;
   --color-apc-cream: #f7f2e7;
 
-  --color-apc-pink:rgba(255, 173, 248, 1);
+  --color-apc-pink:#ffaaff;
   --color-apc-blue:#00BFFF;
   --color-apc-green:#A6E22E;
   --color-apc-coral:#FF8674;
   --color-apc-lavender:#D2B5F9;
   --color-apc-beige:#FFDAB3;
-  --color-apc-teal:#5C7F85;
+  --color-apc-yellow: #ffcf8d;
+  --color-apc-teal:#33ffeb;
   --color-apc-grey:#2C2C2C;
-
-  --text-shadow-pink: 2px 2px 4px rgba(255, 173, 248, 1); /* apc-orange-ish */
 }
 
 
@@ -65,15 +64,27 @@ body::after {
 }
 
 details:nth-child(3n+1) {
-  background-color: var(--color-apc-orange-85);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-apc-orange),
+    var(--color-apc-yellow)
+  );
 }
 
 details:nth-child(3n+2) {
-  background-color: var(--color-apc-turquoise-85);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-apc-turquoise),
+    var(--color-apc-teal)
+  );
 }
 
 details:nth-child(3n+3) {
-  background-color: var(--color-apc-purple-85);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-apc-purple),
+    var(--color-apc-pink)
+  );
 }
 
 .bevel{
