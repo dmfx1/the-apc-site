@@ -22,6 +22,8 @@
   --color-apc-yellow: #ffcf8d;
   --color-apc-teal:#33ffeb;
   --color-apc-grey:#2C2C2C;
+  --color-apc-grey-66: rgba(44,44,44,0.66);
+  --color-apc-grey-20: rgba(44,44,44,0.20);
 }
 
 
