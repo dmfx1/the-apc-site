@@ -5,8 +5,8 @@ import '../styles/global.css';
 ---
 
 <BaseLayout>
-<div class="flex flex-col flex-grow pb-[25rem]"> <!-- adjust padding if needed -->
-  <main class="z-2 min-h-0 md:min-h-screen flex flex-col items-center justify-top md:justify-center px-2 py-16 text-center bg-white/25 md:bg-transparent">
+<div class="relative flex flex-col flex-grow pb-[25rem]">
+  <main class="min-h-0 md:min-h-screen flex flex-col items-center justify-top md:justify-center px-2 py-16 *:text-center">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl w-1/2 sm:w-full mx-auto font-bold mb-10">
       <span class="relative inline-block text-apc-orange">
         <span class="absolute top-[0.6em] sm:top-[0.6em] md:top-[0.4em] lg:top-[0.5em] left-[2.25em] md:left-[2.25em] lg:left-[2.15em] text-[0.225em] leading-none tracking-[1px] lg:tracking-[4px] font-bold text-apc-grey opacity-20">
@@ -21,13 +21,13 @@ import '../styles/global.css';
         Collective
       </span>
     </h1>
-    <div class="w-full sm:w-3/4 xl:w-1/2 sm:mix-blend-color-burn p-4 mx-auto mb-10 md:mb-16">
-      <p class="text-sm md:text-xl font-normal text-apc-black contrast-115 brightness-95 bevel bg-white/66 sm:bg-transparent mb-6 p-4 md:p-0">
-        A scalable, high-end network of freelance audio post professionals – built for projects that demand creative precision, without the overhead of a full studio.
+    <div class="w-full sm:w-3/4 xl:w-1/2 p-4 mx-auto md:mix-blend-color-burn mb-10 md:mb-16">
+      <p class="text-sm md:text-xl font-normal text-apc-black mb-6 p-4 md:p-0 contrast-115 brightness-95 bg-white/70 bevel sm:bg-transparent">
+        A scalable, high-end network of freelance audio post professionals – built for projects that demand creative precision, without the overheads of a full studio.
       </p>
 
-      <p class="text-sm md:text-lg font-normal text-apc-black contrast-115 brightness-95 bevel bg-white/66 sm:bg-white/0 p-4 md:p-0">
-        Led by <span class="text-apc-black font-bold"><a href="https://www.domstorrs.com" target="_blank"><u>dom storrs</u></a></span>, The APC assembles bespoke remote teams to handle sound design, mixing, music editing, and VO for long-form and high-impact productions.
+      <p class="text-sm md:text-lg font-normal text-apc-black p-4 md:p-0 contrast-115 brightness-95 bg-white/70 bevel sm:bg-transparent">
+        Led by <span class="text-apc-black font-bold"><a href="https://www.domstorrs.com" target="_blank"><u>dom storrs</u></a></span>, The APC assembles bespoke remote teams to deliver full-service audio post for long-form and episodic content – from streaming to broadcast and surround sound theatrical release.
       </p>
     </div>
     <a
@@ -38,7 +38,7 @@ import '../styles/global.css';
     </a>
   </main>
   
-  <section class="px-6 md:px-16 w-full max-w-screen-xl mx-auto text-apc-black">
+  <section class="px-6 md:px-16 w-full max-w-screen-2xl mx-auto text-apc-black">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4 lg:gap-6 bevel bg-gradient-to-b from-apc-grey-20 via-bg-apc-grey-20 via-bg-apc-dark to-apc-grey-66 p-3 md:p-4 lg:p-6 *:p-[2px] *:lg:p-[10px] *:text-sm *:lg:text-base">
 
       <!-- FAQ Item 1 -->
@@ -179,40 +179,40 @@ import '../styles/global.css';
 
 
 
-<footer class="bg-white dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+<footer class="bg-gradient-to-r from-apc-bg-dark/80 to-apc-bg-66/10">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-12">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+              <a href="" class="flex items-center">
+                  <img src="" class="h-8 me-3" alt="" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">the Audio Post Collective</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+              <div class="">
+                  <h2 class="mb-6 text-sm font-semibold text-apc-orange uppercase">Resources</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                          <a href="https://flowbite.com/" class="hover:underline">Session Prep</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Deliverables</a>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-apc-turquoise uppercase">News</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Newsletter</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Blog</a>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-apc-purple uppercase">Legal</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Privacy Policy</a>
