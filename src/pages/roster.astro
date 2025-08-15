@@ -1,88 +1,92 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
+import TeamMemberCard from '../components/TeamMemberCard.astro';
+
 ---
 
 <BaseLayout>
-  <section class="min-h-screen px-6 md:px-16 py-24 max-w-screen-xl mx-auto text-apc-black">
-    <h1 class="text-4xl md:text-5xl font-bold mb-10 text-center">The Core</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Team Member 1 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="/people/core/dom_storrs.png" alt="Dom Storrs" class="w-24 h-24 border-2 brightness-130 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">Dom Storrs</h2>
-        <p class="text-sm">Founder, Sound Designer & Mix Engineer. Dom leads the APC and ensures every project meets creative and technical standards.</p>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="/people/core/brian_lane.png" alt="Brian Lane" class="w-24 h-24 border-2 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">Brian Lane</h2>
-        <p class="text-sm">Dialogue Editor with a sharp ear for performance, delivering clean and natural edits that elevate the voice.</p>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="/people/core/richard_collins.png" alt="Richard Collins" class="w-24 h-24 object-cover border-2 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">Richard Collins</h2>
-        <p class="text-sm">Foley Artist with a passion for texture and realism, working across film, TV, and games.</p>
-      </div>
-
-      <!-- Team Member 4 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="/people/core/owain_kelly.png" alt="Owain Kelly" class="w-24 h-24 object-cover border-2 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">Owain Kelly</h2>
-        <p class="text-sm">Foley Artist with a passion for texture and realism, working across film, TV, and games.</p>
-      </div>
-
-      <!-- Team Member 5 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="/people/core/nick_granville_fall.png" alt="Nick Granville-Fall" class="w-24 h-24 object-cover border-2 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">Nick Granville-Fall</h2>
-        <p class="text-sm">Foley Artist with a passion for texture and realism, working across film, TV, and games.</p>
-      </div>
-
-      <!-- Team Member 6 -->
-      <div class="bg-white/80 p-6 rounded-xl bevel shadow-lg">
-        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="James Foley" class="w-24 h-24 object-cover border-2 rounded-full mb-4 p-1" />
-        <h2 class="text-xl font-semibold mb-2">James Foley</h2>
-        <p class="text-sm">Foley Artist with a passion for texture and realism, working across film, TV, and games.</p>
-      </div>
-    </div>
-
-    <!-- Divider -->
-    <hr class="my-16 border-t border-apc-grey-20" />
-
-    <!-- Extended Network -->
-    <h2 class="text-3xl md:text-4xl font-semibold mb-8 text-center">Our Extended Network</h2>
-    <div class="space-y-4">
-      <!-- Member Accordion 1 -->
-      <details class="group bg-white/70 p-6 rounded-xl bevel shadow-md">
-        <summary class="cursor-pointer font-semibold text-lg flex items-center justify-between">
-          <span>Emily Tran – Sound Designer</span>
-          <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-        </summary>
-        <div class="mt-4 text-sm flex gap-4">
-          <img src="https://placehold.co/64x64" alt="Emily Tran" class="w-16 h-16 rounded-full object-cover" />
-          <p>Specialises in subtle, story-driven soundscapes for indie film and documentary. Available for freelance and long-term collaboration.</p>
-        </div>
-      </details>
-
-      <!-- Repeat the same structure for 11 more members -->
-      <details class="group bg-white/70 p-6 rounded-xl bevel shadow-md">
-        <summary class="cursor-pointer font-semibold text-lg flex items-center justify-between">
-          <span>Leon Wu – Music Editor</span>
-          <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-        </summary>
-        <div class="mt-4 text-sm flex gap-4">
-          <img src="https://placehold.co/64x64" alt="Leon Wu" class="w-16 h-16 rounded-full object-cover" />
-          <p>Experienced across commercials and short form content with a focus on pacing and transitions.</p>
-        </div>
-      </details>
-
-      <!-- Add 10 more members here... -->
-      <!-- You can duplicate and update the name, role, description, and image URL -->
-
+  <section class="px-6 md:px-16 py-24 max-w-screen-xl mx-auto text-apc-black">
+    <h1 class="text-4xl md:text-5xl font-bold mb-10 text-center mix-blend-color-burn">The Core</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <TeamMemberCard
+        name="Dom Storrs"
+        role1="team lead | "
+        role2="sound design | "
+        role3="mix"
+        description="Dom leads the APC and ensures every project meets creative and technical standards. He is an experienced audio post engineer for film."
+        imageUrl="/people/core/dom_storrs.png"
+        link="https://www.domstorrs.com"
+      />
+      <TeamMemberCard
+        name="Brian Lane"
+        role1="edit | "
+        role2="sound design | "
+        role3="mix"
+        description="Brian brings a wealth of expertise and technical prowess across documentary, film and episodic content. He oversees technical output."
+        imageUrl="/people/core/brian_lane.png"
+        link="https://www.dissolveaudio.com"
+      />
+      <TeamMemberCard
+        name="Nick Granville-Fall"
+        role1="location | "
+        role2="sound design | "
+        role3="music producer"
+        description="Nick has an incredible ear for sound and a creative approach to music production. Our go-to for location sound."
+        imageUrl="/people/core/nick_granville_fall.png"
+        link="https://www.ideosound.com"
+      />
+      <TeamMemberCard
+        name="Owain Kelly"
+        role1="co-lead | "
+        role2="composer | "
+        role3="music lab"
+        description="Owain is a versatile electronic music composer and sound designer. He co-leads the APC and manages our music lab."
+        imageUrl="/people/core/owain_kelly.png"
+        link="https://owainkelly.com/"
+      />
+      <TeamMemberCard
+        name="Richard Collins"
+        role1="composer"
+        role2=""
+        role3=""
+        description="More classically focussed, Richard brings a unique perspective to our music production."
+        imageUrl="/people/core/richard_collins.png"
+        link="https://owainkelly.com/"
+      />
+      
     </div>
   </section>
+    <!-- Divider -->
+<hr class="my-20 border-t border-20 border-apc-grey-20" />
+
+<section class="px-6 md:px-16 py-24 max-w-screen-xl mx-auto text-apc-black">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Explainer Text -->
+    <div class="bevel bg-white/80 p-12 min-h-[400px]">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-4">Our Extended Network</h2>
+      <p class="text-base md:text-lg leading-relaxed text-apc-grey-80">
+        We collaborate with a wider network of experienced professionals — from foley artists to music editors — who complement our core team. While you won't see them all here, rest assured we bring the right people into each project based on fit and quality, not preference.
+      </p>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative overflow-hidden bevel bg-white/80 p-0 min-h-[400px]">
+      <div class="flex animate-slide gap-0 min-h-[400px]">
+        <img src="/people/extended/mats_yashvili.png" alt="Mats Yashvili" class="object-cover h-full w-auto" />
+        <img src="/people/extended/nadine_yahare.png" alt="Nadine Yahare" class="object-cover h-full w-auto" />
+        <img src="/people/extended/mike_dee.png" alt="Mike Dee" class="object-cover h-full w-auto" />
+        <img src="/people/extended/jane_leyanne.png" alt="Jane Leyanne" class="object-cover h-full w-auto" />
+        <img src="/people/extended/patrick_o'hare.png" alt="Patrick O'Hare" class="object-cover h-full w-auto" />
+        <img src="/people/extended/pete_mcgree.png" alt="Pete McGree" class="object-cover h-full w-auto" />
+        <img src="/people/extended/rob_granger.png" alt="Rob Granger" class="object-cover h-full w-auto" />
+        <img src="/people/extended/justin_carter.png" alt="Justin Carter" class="object-cover h-full w-auto" />
+        <img src="/people/extended/marc_guehi.png" alt="Marc Guehi" class="object-cover h-full w-auto" />
+        <img src="/people/extended/luan_yi.png" alt="Luan Yi" class="object-cover h-full w-auto" />
+        <!-- Add more images -->
+      </div>
+    </div>
+  </div>
+</section>
 </BaseLayout>

@@ -1,0 +1,22 @@
+---
+const { name, role1, role2, role3, description, imageUrl, link } = Astro.props;
+---
+
+<div class="bg-white/80 p-6 rounded-xl bevel shadow-lg flex flex-col text-left h-full">
+  <img src={imageUrl} alt={name} class="w-24 h-24 object-cover border-2 rounded-full mb-2" />
+
+  <div class="mb-2">
+    <h2 class="text-xl font-bold">{name}</h2>
+    {link && (
+      <a href={link} target="_blank" rel="noopener noreferrer" class="text-sm text-apc-orange hover:underline break-words">
+        {link}
+      </a>
+    )}
+  </div>
+
+  <p class="text-sm mb-2 min-h-[2.5rem]">{role1}{role2}{role3}</p>
+
+  {description && (
+    <p class="text-sm">{description}</p>
+  )}
+</div>

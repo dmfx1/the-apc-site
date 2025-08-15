@@ -118,3 +118,12 @@ details:nth-child(3n+3) {
     0% calc(100% - 8px), 0% 8px
   );
 }
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
